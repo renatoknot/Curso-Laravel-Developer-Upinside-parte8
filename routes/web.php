@@ -14,5 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('front.home');
+    $user = new stdClass();
+    $user->name = 'Renato Santos';
+    $user->birth = '1988-04-27';
+    $user->email = 'renatoslip@hotmail.com';
+
+    $alert = "<div style= 'background-color: red;'>Teste</div>";
+
+    return view('front.home', [
+        'user'=> $user,
+        'alert' => $alert
+    ]);
+    // return view('front.home')->with(['user'  => $user]);//enviando um vetor de parametros pra view
+    // return view('front.home')->with('user',  $user);//enviando um unico parametro pra view;
+    //return view('front.home', compact('user'));//simplifica ja passando o indice e variavel
 });
