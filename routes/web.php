@@ -48,3 +48,7 @@ Route::get('/', function () {
     // return view('front.home')->with('user',  $user);//enviando um unico parametro pra view;
     //return view('front.home', compact('user'));//simplifica ja passando o indice e variavel
 });
+
+Route::get('/curso', function() {
+    return view('front.course');
+});
