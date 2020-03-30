@@ -119,9 +119,9 @@
         <div class="col-12">
 
 
-            @alert(['type' => 'danger', 'datetime' => date('d/m/Y H:i:s')])
+            {{-- @alert(['type' => 'danger', 'datetime' => date('d/m/Y H:i:s')])
 
-            @endalert
+            @endalert --}}
 
         </div>
     </div>
