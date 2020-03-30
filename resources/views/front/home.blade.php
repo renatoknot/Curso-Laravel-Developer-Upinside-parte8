@@ -108,6 +108,23 @@
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-12">
+            @component('front.components.alert', ['type' => 'danger', 'datetime' => date('d/m/Y H:i:s')])
+                Mensagem de teste
+            @endcomponent
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+
+
+            @alert(['type' => 'danger', 'datetime' => date('d/m/Y H:i:s')])
+
+            @endalert
+
+        </div>
+    </div>
 </div>
 
 

@@ -16,5 +16,6 @@
     @include('front.includes.footer')
 
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+    @include('sweetalert::alert')
 </body>
 </html>
